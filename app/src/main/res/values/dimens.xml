@@ -6,4 +6,7 @@
     <dimen name="margin_top_text_area">70dp</dimen>
     <dimen name="start_constraint_point">0dp</dimen>
     <dimen name="button_radius">25dp</dimen>
+    <dimen name="button_radius_2">10dp</dimen>
+    <dimen name="margin_top_for_changectivity">100dp</dimen>
+    <dimen name="text_size_activity">20sp</dimen>
 </resources>
