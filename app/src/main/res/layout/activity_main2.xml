@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/edit_result"
@@ -22,20 +21,19 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_1"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
         android:text="@string/key_1"
         android:textSize="@dimen/number_size"
-        app:cornerRadius="@dimen/button_radius"
         app:layout_constraintEnd_toStartOf="@id/key_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_result" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_2"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -47,7 +45,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_3"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -70,7 +68,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_4"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -82,7 +80,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_5"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -94,7 +92,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_6"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -117,7 +115,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_7"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -129,7 +127,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_8"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -141,7 +139,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_9"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -164,7 +162,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/key_10"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="appendText"
@@ -176,7 +174,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/dot"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key_11"
@@ -187,7 +185,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/equal"
-        style="@style/lesson4_calculator_homework_style"
+        style="@style/lesson4_calculator_homework_style2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/key_12"
@@ -211,8 +209,8 @@
         android:id="@+id/change_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="operations"
         android:layout_marginTop="@dimen/margin_top_for_changectivity"
+        android:onClick="operations"
         android:text="@string/key_change_activity"
         android:textSize="@dimen/number_size"
         app:layout_constraintEnd_toEndOf="@id/equal"
@@ -223,12 +221,13 @@
         android:id="@+id/number_activity_1"
         android:layout_width="@dimen/start_constraint_point"
         android:layout_height="@dimen/height_text_area"
-        android:text="@string/number_activity_1"
+        android:text="@string/number_activity_2"
         android:textAlignment="center"
         android:textColor="@color/cardview_dark_background"
         android:textSize="@dimen/text_size_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/change_activity"
         app:layout_constraintStart_toStartOf="@id/change_activity" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

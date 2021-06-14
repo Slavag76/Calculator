@@ -16,5 +16,8 @@
     <string name="key_14">*</string>
     <string name="key_15">-</string>
     <string name="key_16">+</string>
+    <string name="key_change_activity">Change Activity</string>
+    <string name="number_activity_1">activity 1</string>
+    <string name="number_activity_2">activity 2</string>
 
 </resources>

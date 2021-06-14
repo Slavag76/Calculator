@@ -1,6 +1,7 @@
 package com.testlslavag76.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity2 extends AppCompatActivity {
 
     private Button changeActivityBtton;
 
@@ -22,23 +22,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
+
 
         changeActivityBtton = findViewById(R.id.change_activity);
 
         changeActivityBtton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Context context = MainActivity.this;
+                Context context = MainActivity2.this;
 
-                Class newActivity = MainActivity2.class;
+                Class newActivity = MainActivity.class;
 
-                Intent mainActivity2Intent = new Intent(context, newActivity);
+                Intent mainActivityIntent = new Intent(context, newActivity);
 
-                startActivity(mainActivity2Intent);
+                startActivity(mainActivityIntent);
 
             }
         }));
+
 
         txt = findViewById(R.id.edit_result); /* делаем ссылку переменной txt на id поля ввода */
         Button answer = findViewById(R.id.equal); /*прописываем переменную для кнопки "равно" */
